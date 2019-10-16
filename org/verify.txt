@@ -1,0 +1,43 @@
+-help                 Display this summary
+-verbose              Print extra information about the operations being performed.
+-CApath dir           A directory of trusted certificates
+-CAfile infile        A file of trusted certificates
+-no-CAfile            Do not load the default certificates file
+-no-CApath            Do not load certificates from the default certificates directory
+-untrusted infile     A file of untrusted certificates
+-trusted infile       A file of trusted certificates
+-CRLfile infile       File containing one or more CRL's (in PEM format) to load
+-crl_download         Attempt to download CRL information for this certificate
+-show_chain           Display information about the certificate chain
+-nameopt val          Various certificate name options
+-policy val           adds policy to the acceptable policy set
+-purpose val          certificate chain purpose
+-verify_name val      verification policy name
+-verify_depth int     chain depth limit
+-auth_level int       chain authentication security level
+-attime intmax        verification epoch time
+-verify_hostname val  expected peer hostname
+-verify_email val     expected peer email
+-verify_ip val        expected peer IP address
+-ignore_critical      permit unhandled critical extensions
+-issuer_checks        (deprecated)
+-crl_check            check leaf certificate revocation
+-crl_check_all        check full chain revocation
+-policy_check         perform rfc5280 policy checks
+-explicit_policy      set policy variable require-explicit-policy
+-inhibit_any          set policy variable inhibit-any-policy
+-inhibit_map          set policy variable inhibit-policy-mapping
+-x509_strict          disable certificate compatibility work-arounds
+-extended_crl         enable extended CRL features
+-use_deltas           use delta CRLs
+-policy_print         print policy processing diagnostics
+-check_ss_sig         check root CA self-signatures
+-trusted_first        search trust store first (default)
+-suiteB_128_only      Suite B 128-bit-only mode
+-suiteB_128           Suite B 128-bit mode allowing 192-bit algorithms
+-suiteB_192           Suite B 192-bit-only mode
+-partial_chain        accept chains anchored by intermediate trust-store CAs
+-no_alt_chains        (deprecated)
+-no_check_time        ignore certificate validity time
+-allow_proxy_certs    allow the use of proxy certificates
+-engine val           Use engine, possibly a hardware device

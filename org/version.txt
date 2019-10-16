@@ -1,0 +1,10 @@
+-help  Display this summary
+-a     Show all data
+-b     Show build date
+-d     Show configuration directory
+-e     Show engines directory
+-f     Show compiler flags used
+-o     Show some internal datatype options
+-p     Show target build platform
+-r     Show random seeding options
+-v     Show library version

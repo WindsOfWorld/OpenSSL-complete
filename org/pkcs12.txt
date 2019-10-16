@@ -1,0 +1,41 @@
+-help               Display this summary
+-nokeys             Don't output private keys
+-keyex              Set MS key exchange type
+-keysig             Set MS key signature type
+-nocerts            Don't output certificates
+-clcerts            Only output client certificates
+-cacerts            Only output CA certificates
+-noout              Don't output anything, just verify
+-info               Print info about PKCS#12 structure
+-chain              Add certificate chain
+-twopass            Separate MAC, encryption passwords
+-nomacver           Don't verify MAC
+-descert            Encrypt output with 3DES (default RC2-40)
+-certpbe val        Certificate PBE algorithm (default RC2-40)
+-export             Output PKCS12 file
+-noiter             Don't use encryption iteration
+-maciter            Use MAC iteration
+-nomaciter          Don't use MAC iteration
+-nomac              Don't generate MAC
+-LMK                Add local machine keyset attribute to private key
+-nodes              Don't encrypt private keys
+-macalg val         Digest algorithm used in MAC (default SHA1)
+-keypbe val         Private key PBE algorithm (default 3DES)
+-rand val           Load the file(s) into the random number generator
+-writerand outfile  Write random data to the specified file
+-inkey val          Private key if not infile
+-certfile infile    Load certs from file
+-name val           Use name as friendly name
+-CSP val            Microsoft CSP name
+-caname val         Use name as CA friendly name (can be repeated)
+-in infile          Input filename
+-out outfile        Output filename
+-passin val         Input file pass phrase source
+-passout val        Output file pass phrase source
+-password val       Set import/export password source
+-CApath dir         PEM-format directory of CA's
+-CAfile infile      PEM-format file of CA's
+-no-CAfile          Do not load the default certificates file
+-no-CApath          Do not load certificates from the default certificates directory
+-*                  Any supported cipher
+-engine val         Use engine, possibly a hardware device

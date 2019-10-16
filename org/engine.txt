@@ -1,0 +1,10 @@
+-help      Display this summary
+-v         List 'control commands' For each specified engine
+-vv        Also display each command's description
+-vvv       Also add the input flags for each command
+-vvvv      Also show internal input flags
+-c         List the capabilities of specified engine
+-t         Check that specified engine is available
+-tt        Display error trace for unavailable engines
+-pre val   Run command against the ENGINE before loading it
+-post val  Run command against the ENGINE after loading it

@@ -1,0 +1,25 @@
+-help             Display this summary
+-inform PEM|DER   Input format; default PEM
+-in infile        Input file - default stdin
+-outform PEM|DER  Output format - default PEM
+-out outfile      output file - default stdout
+-keyform PEM|DER  Private key file format (PEM or ENGINE)
+-key infile       CRL signing Private key to use
+-issuer           Print issuer DN
+-lastupdate       Set lastUpdate field
+-nextupdate       Set nextUpdate field
+-noout            No CRL output
+-fingerprint      Print the crl fingerprint
+-crlnumber        Print CRL number
+-badsig           Corrupt last byte of loaded CRL signature (for test)
+-gendelta infile  Other CRL to compare/diff to the Input one
+-CApath dir       Verify CRL using certificates in dir
+-CAfile infile    Verify CRL using certificates in file name
+-no-CAfile        Do not load the default certificates file
+-no-CApath        Do not load certificates from the default certificates directory
+-verify           Verify CRL signature
+-text             Print out a text format version
+-hash             Print hash value
+-nameopt val      Various certificate name options
+-*                Any supported digest
+-hash_old         Print old-style (MD5) hash value

@@ -1,0 +1,17 @@
+-help             Display this summary
+-inform format    Input format (DER or PEM)
+-outform PEM|DER  Output format (DER or PEM)
+-passin val       Input file pass phrase source
+-passout val      Output file pass phrase source
+-in val           Input key
+-out outfile      Output file
+-pubin            Read public key from input (default is private key)
+-pubout           Output public key, not private
+-text_pub         Only output public key components
+-text             Output in plaintext as well
+-noout            Don't output the key
+-*                Any supported cipher
+-traditional      Use traditional format for private keys
+-engine val       Use engine, possibly a hardware device
+-check            Check key consistency
+-pubcheck         Check public key consistency
