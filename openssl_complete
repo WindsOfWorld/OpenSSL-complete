@@ -1,0 +1,36 @@
+complete -F _openssl_complete_func openssl
+_openssl_complete_func()
+{
+    COMPREPLY=()
+    local cur=${COMP_WORDS[COMP_CWORD]};
+    local cmd=${COMP_WORDS[COMP_CWORD-1]};
+    local menu=${COMP_WORDS[1]};
+    
+    if [[ ${COMP_CWORD} -gt 1 ]]; then
+    	local pro_all=( $(awk '{print $1}' ./org/$menu.txt) );
+    	if [[ "${menu}" == "dgst" ]]; then
+    			local pro_other="-blake2b512 -blake2s256 -gost -md4 -md5 -mdc2 -rmd160 -sha1 \
+    			-sha224 -sha256 -sha3-224 -sha3-256 -sha3-384 -sha3-512 -sha384 -sha512 -sha512-224 \
+    			-sha512-256 -shake128 -shake256 -sm3"
+    	fi
+    	COMPREPLY=( $(compgen -W '${pro_all[@]} ${pro_other}' -- $cur) );
+    fi
+    case $cmd in
+    '-in'|'-out'|'-keyfile')
+          COMPREPLY=( $(compgen -f -- $cur) ) ;;
+    '-inform'|'-outform')
+    			COMPREPLY=( $(compgen -W 'PEM DER' -- $cur));;
+    '*')
+    			;;
+    esac
+    			
+    if [[ ${COMP_CWORD} -eq 1 ]]; then
+          local opts="asn1parse ca ciphers cms dsa dsaparam ec ecparam crl crl2pkcs7 \
+          dgst dhparam enc engine errstr gendsa genpkey genrsa help list nseq ocsp passwd \
+          pkcs12 pkcs7 pkcs8 pkey pkeyparam pkeyutl prime rand rehash req rsa rsautl s_client \
+          s_server s_time sess_id smime speed spkac srp storeutl ts verify version x509" 
+          COMPREPLY=( $(compgen -W '${opts}' -- $cur) )
+    fi
+    return 0
+}
+
