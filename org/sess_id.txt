@@ -1,0 +1,9 @@
+-help            Display this summary
+-inform PEM|DER  Input format - default PEM (DER or PEM)
+-outform format  Output format - default PEM (PEM, DER or NSS)
+-in val          Input file - default stdin
+-out outfile     Output file - default stdout
+-text            Print ssl session id details
+-cert            Output certificate 
+-noout           Don't output the encoded session info
+-context val     Set the session ID context

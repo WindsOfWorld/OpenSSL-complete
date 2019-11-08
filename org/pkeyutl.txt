@@ -1,0 +1,27 @@
+-help                     Display this summary
+-in infile                Input file - default stdin
+-out outfile              Output file - default stdout
+-pubin                    Input is a public key
+-certin                   Input is a cert with a public key
+-asn1parse                asn1parse the output data
+-hexdump                  Hex dump output
+-sign                     Sign input data with private key
+-verify                   Verify with public key
+-verifyrecover            Verify with public key, recover original data
+-rev                      Reverse the order of the input buffer
+-encrypt                  Encrypt input data with public key
+-decrypt                  Decrypt input data with private key
+-derive                   Derive shared secret
+-kdf val                  Use KDF algorithm
+-kdflen +int              KDF algorithm output length
+-sigfile infile           Signature file (verify operation only)
+-inkey val                Input private key file
+-peerkey val              Peer key file used in key derivation
+-passin val               Input file pass phrase source
+-peerform PEM|DER|ENGINE  Peer key format - default PEM
+-keyform PEM|DER|ENGINE   Private key format - default PEM
+-pkeyopt val              Public key options as opt:value
+-rand val                 Load the file(s) into the random number generator
+-writerand outfile        Write random data to the specified file
+-engine val               Use engine, possibly a hardware device
+-engine_impl              Also use engine given by -engine for crypto operations

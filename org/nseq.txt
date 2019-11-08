@@ -1,0 +1,4 @@
+-help         Display this summary
+-toseq        Output NS Sequence file
+-in infile    Input file
+-out outfile  Output file

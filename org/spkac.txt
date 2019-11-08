@@ -1,0 +1,13 @@
+-help            Display this summary
+-in infile       Input file
+-out outfile     Output file
+-key infile      Create SPKAC using private key
+-keyform format  Private key file format - default PEM (PEM, DER, or ENGINE)
+-passin val      Input file pass phrase source
+-challenge val   Challenge string
+-spkac val       Alternative SPKAC name
+-noout           Don't print SPKAC
+-pubkey          Output public key
+-verify          Verify SPKAC signature
+-spksect val     Specify the name of an SPKAC-dedicated section of configuration
+-engine val      Use engine, possibly a hardware device

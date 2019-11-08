@@ -1,0 +1,22 @@
+-help               Display this summary
+-inform PEM|DER     Input format (DER or PEM)
+-outform PEM|DER    Output format (DER or PEM)
+-in infile          Input file
+-out outfile        Output file
+-topk8              Output PKCS8 file
+-noiter             Use 1 as iteration count
+-nocrypt            Use or expect unencrypted private key
+-rand val           Load the file(s) into the random number generator
+-writerand outfile  Write random data to the specified file
+-v2 val             Use PKCS#5 v2.0 and cipher
+-v1 val             Use PKCS#5 v1.5 and cipher
+-v2prf val          Set the PRF algorithm to use with PKCS#5 v2.0
+-iter +int          Specify the iteration count
+-passin val         Input file pass phrase source
+-passout val        Output file pass phrase source
+-traditional        use traditional format private key
+-engine val         Use engine, possibly a hardware device
+-scrypt             Use scrypt algorithm
+-scrypt_N val       Set scrypt N parameter
+-scrypt_r val       Set scrypt r parameter
+-scrypt_p val       Set scrypt p parameter

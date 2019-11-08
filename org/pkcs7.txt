@@ -1,0 +1,10 @@
+-help             Display this summary
+-inform PEM|DER   Input format - DER or PEM
+-in infile        Input file
+-outform PEM|DER  Output format - DER or PEM
+-out outfile      Output file
+-noout            Don't output encoded data
+-text             Print full details of certificates
+-print            Print out all fields of the PKCS7 structure
+-print_certs      Print_certs  print any certs or crl in the input
+-engine val       Use engine, possibly a hardware device

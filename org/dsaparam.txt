@@ -1,0 +1,12 @@
+-help               Display this summary
+-inform PEM|DER     Input format - DER or PEM
+-in infile          Input file
+-outform PEM|DER    Output format - DER or PEM
+-out outfile        Output file
+-text               Print as text
+-C                  Output C code
+-noout              No output
+-genkey             Generate a DSA key
+-rand val           Load the file(s) into the random number generator
+-writerand outfile  Write random data to the specified file
+-engine val         Use engine e, possibly a hardware device

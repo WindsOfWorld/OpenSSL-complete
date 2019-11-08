@@ -1,0 +1,6 @@
+-help    Display this summary
+-h       Display this summary
+-compat  Create both new- and old-style hash links
+-old     Use old-style hash to generate links
+-n       Do not remove existing links
+-v       Verbose output
