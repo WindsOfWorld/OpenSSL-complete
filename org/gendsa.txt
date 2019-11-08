@@ -1,7 +1,0 @@
--help               Display this summary
--out outfile        Output the key to the specified file
--passout val        Output file pass phrase source
--rand val           Load the file(s) into the random number generator
--writerand outfile  Write random data to the specified file
--*                  Encrypt the output with any supported cipher
--engine val         Use engine, possibly a hardware device

@@ -1,7 +1,0 @@
--help         Display this summary
--in infile    Input file
--out outfile  Output file
--text         Print parameters as text
--noout        Don't output encoded parameters
--engine val   Use engine, possibly a hardware device
--check        Check key param consistency

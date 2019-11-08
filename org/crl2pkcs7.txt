@@ -1,7 +1,0 @@
--help             Display this summary
--inform PEM|DER   Input format - DER or PEM
--outform PEM|DER  Output format - DER or PEM
--in infile        Input file
--out outfile      Output file
--nocrl            No crl to load, just certs from '-certfile'
--certfile infile  File of chain of certs to a trusted CA; can be repeated
