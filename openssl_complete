@@ -7,7 +7,7 @@ _openssl_complete_func()
     local menu=${COMP_WORDS[1]};
     
     if [[ ${COMP_CWORD} -gt 1 ]]; then
-    	local pro_all=( $(awk '{print $1}' ./org/$menu.txt) );
+    	local pro_all=( $(awk '{print $1}' /etc/openssl/$menu.txt) );
     	if [[ "${menu}" == "dgst" ]]; then
     			local pro_other="-blake2b512 -blake2s256 -gost -md4 -md5 -mdc2 -rmd160 -sha1 \
     			-sha224 -sha256 -sha3-224 -sha3-256 -sha3-384 -sha3-512 -sha384 -sha512 -sha512-224 \
